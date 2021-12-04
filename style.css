@@ -1,0 +1,45 @@
+:root{
+    --branco: rgb(247, 247, 247);
+    --fonte: 'Roboto', sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: var(--branco);
+
+}
+
+.titulo{
+    font-family: var(--fonte);
+}
+
+.resultados{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    
+}
+
+.card{
+    margin: 5px;
+    padding: 5px 8px;
+    border-radius: 15px;
+    border: 2px solid black;
+    background-color: var(--branco);
+}
+
+.nome{
+    padding:1rem 0.5rem;
+    font-family: var(--fonte);
+}
+
+.imagem{
+    width: 400px;
+    height: auto;
+}
+
+
