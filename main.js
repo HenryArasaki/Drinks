@@ -7,9 +7,18 @@ async function teste() {
     const bebidaAleatoria = await fetch("https:www.thecocktaildb.com/api/json/v1/1/search.php?s=margarita")
     const data = await bebidaAleatoria.json()
     data.drinks.forEach(element => {
+        const link = document.createElement("a")
+
+        link.setAttribute("href","receita.html")
+        link.setAttribute("data-id",element.idDrink)
+        link.addEventListener("click", function (e) {
+            console.log(e.target.parentElement.parentElement.dataset.id)
+            localStorage.setItem("receitaID",e.target.parentElement.parentElement.dataset.id)
+        })
         const receita = document.createElement("section")
         receita.classList.add("card")
-        resultados.append(receita)
+        resultados.append(link)
+        link.append(receita)
 
         const nome = document.createElement("h2")
         nome.innerText = element.strDrink
@@ -23,7 +32,7 @@ async function teste() {
 
     });
 
-    //console.log(data.drinks[0])
+    console.log(data.drinks)
 }
 
 teste()
