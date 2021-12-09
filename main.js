@@ -2,6 +2,7 @@
 const resultados = document.getElementById("resultados")
 const input = document.getElementById("input")
 const botao = document.getElementById("botao")
+const loadingImg = document.getElementById("loadingImg")
 
 async function teste() {
     const bebidaAleatoria = await fetch("https:www.thecocktaildb.com/api/json/v1/1/random.php")
@@ -21,6 +22,8 @@ async function teste() {
     const data6 = await bebidaAleatoria6.json()
     const data7 = await bebidaAleatoria7.json()
     const data8 = await bebidaAleatoria8.json()
+    console.log(loadingImg)
+    loadingImg.remove()
     let datas = data.drinks.concat(data2.drinks,data3.drinks,data4.drinks,data5.drinks,data6.drinks,data7.drinks,data8.drinks)
     console.log(datas)
     datas.forEach(element => {
