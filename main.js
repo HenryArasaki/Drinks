@@ -12,7 +12,7 @@ async function teste() {
 
     console.log(loadingImg)
     loadingImg.remove()
-    data.forEach(element => {
+    data.drinks.forEach(element => {
         const link = document.createElement("a")
 
         link.setAttribute("href","receita.html")
