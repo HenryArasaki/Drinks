@@ -7,8 +7,8 @@ const botao = document.getElementById("botao")
 const loadingImg = document.getElementById("loadingImg")
 
 async function bebidasAleatorias() {
-    const bebidaAleatoria = await fetch("https:www.thecocktaildb.com/api/json/v1/1/random.php")
-    const bebidaAleatoria2 = await fetch("https:www.thecocktaildb.com/api/json/v1/1/random.php")
+    const bebidaAleatoria = await fetch("www.thecocktaildb.com/api/json/v1/1/random.php")
+    const bebidaAleatoria2 = await fetch("www.thecocktaildb.com/api/json/v1/1/random.php")
     const bebidaAleatoria3 = await fetch("https:www.thecocktaildb.com/api/json/v1/1/random.php")
     const bebidaAleatoria4 = await fetch("https:www.thecocktaildb.com/api/json/v1/1/random.php")
     const bebidaAleatoria5 = await fetch("https:www.thecocktaildb.com/api/json/v1/1/random.php")
