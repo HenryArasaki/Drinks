@@ -1,0 +1,99 @@
+
+
+#resultado{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+.resultado-direita{
+    max-width: 30%;
+    margin-left: 4%;
+    box-shadow: 1px 1px 3px  rgba(5, 5, 5, 0.8);
+    height: 100%;
+    padding: 1rem;
+    background-color: var(--cor-fundo-receita);
+    border-radius: 20px;
+}
+
+.imagem-receita{
+    max-width: 60vw;
+    height: 100%;
+    box-shadow: 1px 1px 3px  rgba(5, 5, 5, 0.8);
+    border-radius: 20px;
+}
+
+.receita-texto{
+    font:var(--fonte);
+    color:var(--preto);
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+#nome-drink{
+    font-size: 3rem;
+    margin-bottom: 1rem ;
+    font-family: var(--fonte);
+}
+
+
+
+#ingredientes{
+    list-style-type: none;
+}
+
+
+.botao-voltar{
+    text-decoration: none;
+    font-size: 2rem;
+    background-color: var(--cor-botao);
+    color: var(--branco);
+    padding: 1rem;
+    border-radius: 20px;
+    position: relative;
+    margin-left: 80%;
+}
+
+.nomezinho{
+    font-family: var(--fonte);
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    color:  rgb(46, 5, 7);
+}
+
+@media only screen and (max-width:1100px) {
+    .receita-texto{
+        font-size: 1rem;
+    }
+    .botao-voltar{
+        padding: 0.2rem;
+    }
+}
+
+@media only screen and (max-width:740px) {
+    .receita-texto{
+        font-size: 1rem;
+    }
+    .botao-voltar{
+        margin-left: 60%;
+    }
+    #resultado{
+        flex-direction: column;
+        align-items: center;
+    }
+    .imagem-receita{
+        max-width: 60vw;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 2rem;
+    }
+    .resultado-direita{
+        max-width: 80vw;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+}

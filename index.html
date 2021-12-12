@@ -4,37 +4,43 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Drinks</title>
+    <title>Smash Drinks</title>
 
     <link rel="stylesheet" href="style.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&family=Satisfy&family=Tangerine:wght@400;700&display=swap" rel="stylesheet">
 
 </head>
 <body>
     
     <div class="app">
-
-        <h1 class="titulo">Site Brabo Drinks</h1>
-
-
-        <nav class="nav">
-            <form >
-
-                <input type="text" class="input" id="input">
-                <button class="botao" id="botao">Procurar</button>
-    
-            </form>
-            <a href="">Tequila</a>
-            <a href="">Gin</a>
-            <a href="">Rum</a>
-            <a href="">Ginger</a>
-            <a href="">Whiskey</a>
-            <a href="">Vodka</a>
+        <header class="header">
             
-        </nav>
+            <nav class="nav">
+                <div class="menu">
+                    <button class="nav-item">Tequila</button>
+                    <span class='pipe'>|</span>
+                    <button class="nav-item">Gin</button>
+                    <span class='pipe'>|</span>
+                    <button class="nav-item">Rum</button>
+                    <span class='pipe'>|</span>
+                    <button class="nav-item">Whiskey</button>
+                    <span class='pipe'>|</span>
+                    <button class="nav-item">Vodka</button>
+                </div>
+                <a class="a-titulo"href="index.html"><h1 class="titulo">Smash Drinks</h1></a>
+
+                <form class="form" >
+                    <input class="input-form" type="text" class="input" id="input">
+                    <button class="botao" id="botao"></button>
+                </form>
+            </nav>
+        </header>
+
+
+
 
        
         <div class="resultados" id="resultados">
@@ -47,6 +53,6 @@
     </div>
 
 
-    <script src="main.js"></script>
+    <script src="main.js" type="module"></script>
 </body>
 </html>
